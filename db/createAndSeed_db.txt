@@ -10,3 +10,5 @@ CREATE TABLE filmes(
 Para calcular a média: https://stackoverflow.com/questions/19185043/how-to-use-a-calculated-column-to-calculate-another-column-in-the-same-view
 
 Conexao direta a dbname: https://stackoverflow.com/questions/32706823/database-name-in-connection-with-mysql
+
+Para editar os valores na base de dados de um objeto especifico: https://www.youtube.com/watch?v=sNqH8Nql1iA&ab_channel=Celke
