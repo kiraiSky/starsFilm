@@ -1,0 +1,12 @@
+CREATE TABLE filmes(
+    idFilme int PRIMARY KEY NOT null AUTO_INCREMENT,
+    nomeFilme varchar(100) not null,
+    categoria varchar(100),
+    vezesAvaliado int,
+    media double
+    );
+
+
+Para calcular a média: https://stackoverflow.com/questions/19185043/how-to-use-a-calculated-column-to-calculate-another-column-in-the-same-view
+
+Conexao direta a dbname: https://stackoverflow.com/questions/32706823/database-name-in-connection-with-mysql
