@@ -21,37 +21,9 @@
   </div>
 </nav>
 
-<div class="movie-card">
-		<div class="movie-header manOfSteel">
-			
-		</div><!--movie-header-->
-		<div class="movie-content">
-			<div class="movie-content-header">
-				<a href="#">
-					<h3 class="movie-title">Man of Steel</h3>
-				</a>
-				<div class="imax-logo"></div>
-			</div>
-			<div class="movie-info">
-				<div class="info-section">
-					<label>Date &amp; Time</label>
-					<span>Sun 8 Sept - 10:00PM</span>
-				</div><!--date,time-->
-				<div class="info-section">
-					<label>Screen</label>
-					<span>03</span>
-				</div><!--screen-->
-				<div class="info-section">
-					<label>Row</label>
-					<span>F</span>
-				</div><!--row-->
-				<div class="info-section">
-					<label>Seat</label>
-					<span>21,22</span>
-				</div><!--seat-->
-			</div>
-		</div><!--movie-content-->
-	</div><!--movie-card-->
+<?php 
+include('functions/pesquisarFilmes.php');
+?>
     
 </body>
 </html>
