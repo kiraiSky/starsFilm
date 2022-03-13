@@ -6,8 +6,12 @@ $sql = "SELECT idFilme, nomeFilme, categoria, vezesAvaliado, media, backgroundUR
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
+
+	
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
+		if($row["vezesAvaliado"] < 1)
+		$row["vezesAvaliado"] = 1;
     echo ('<div class="movie-card">
 		<div class="movie-header" style="background: url('. $row["backgroundURL"]. '); background-size:cover;">
 			
@@ -28,6 +32,10 @@ if (mysqli_num_rows($result) > 0) {
 					<label>Avaliações</label>
 					<span>'. $row["vezesAvaliado"] .'</span>
 				</div><!--Avaliações-->
+				<div class="info-section">
+					<label>&#160;</label>
+					<span><a href="#">Deletar</a></span>
+				</div><!--Nota-->
 			</div>
 		</div><!--movie-content-->
 	</div><!--movie-card-->');
