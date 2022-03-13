@@ -21,9 +21,12 @@
   </div>
 </nav>
 
-<?php 
-include('functions/pesquisarFilmes.php');
-?>
-    
+<div class="container"><a class="btn btn-outline-primary" href="inserirFilmes.php">Adicionar filme</a></div>
+
+  <div class="container">
+    <?php 
+    include('functions/pesquisarFilmes.php');
+    ?>
+  </div>
 </body>
 </html>
